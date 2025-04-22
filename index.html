@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rivista Elegante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1><a href="index.html" class="logo">Rivista Elegante</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Benvenuti nella nostra rivista</h2>
+            <p>Stile, cultura e riflessioni contemporanee.</p>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Articoli recenti</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="nuovi arte">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Mostra d'Arte Contemporanea</h3>
+                        <p>Un viaggio tra le nuove espressioni artistiche del panorama italiano...</p>
+                        <a href="articolo1.html">Leggi di più</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi filosofia">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Filosofia e Tecnologia</h3>
+                        <p>Una riflessione sul rapporto tra pensiero filosofico e innovazione tecnologica...</p>
+                        <a href="articolo2.html">Scopri</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Società Contemporanea</h3>
+                        <p>Una riflessione profonda sui temi sociali che coinvolgono la cultura italiana...</p>
+                        <a href="articolo3.html">Approfondisci</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi letteratura">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Letteratura di genere</h3>
+                        <p>Una riflessione profonda sulla composizione di romanzi e...</p>
+                        <a href="articolo4.html">Approfondisci</a>
+                    </div>
+                </article>
+            </div>
+            <div class="view-more">
+                <a href="articoli.html" class="btn">Tutti gli articoli</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="segnalazioni">
+        <div class="container">
+            <h3>Inviaci le tue segnalazioni</h3>
+            <p>Hai suggerimenti, idee o vuoi segnalare qualcosa di interessante? Scrivici e saremo felici di accogliere i tuoi contributi.</p>
+            <form>
+                <div class="form-group-vertical">
+                    <input type="text" placeholder="Il tuo nome" required>
+                    <input type="email" placeholder="La tua email" required>
+                    <select>
+                        <option value="" disabled selected>Tipo di segnalazione</option>
+                        <option value="suggerimento">Suggerimento articolo</option>
+                        <option value="correzione">Correzione</option>
+                        <option value="collaborazione">Proposta di collaborazione</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                    <textarea placeholder="Descrivi la tua segnalazione..." rows="4" required></textarea>
+                    <button type="submit" class="btn-submit">Invia segnalazione</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Rivista Elegante</h4>
+                    <p>La tua fonte di ispirazione per stile, cultura e riflessioni contemporanee.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Esplora</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articoli.html">Articoli</a></li>
+                        <li><a href="chisiamo.html">Chi siamo</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="Pinterest">PT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rivista Elegante. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

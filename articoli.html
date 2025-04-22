@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articoli - Rivista Elegante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+        <h1><a href="index.html" class="logo">Rivista Elegante</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+        <h2>I nostri Articoli</h2>
+        <p>Una selezione curata di contenuti culturali e di approfondimento.</p>
+    </div>
+</section>
+
+<section class="articles-section">
+    <div class="container">
+        <div class="category-filters">
+            <button class="category-button active" data-category="tutti">Tutti</button>
+            <button class="category-button" data-category="nuovi">Nuovi</button>
+            <button class="category-button" data-category="arte">Arte</button>
+            <button class="category-button" data-category="filosofia">Filosofia</button>
+            <button class="category-button" data-category="letteratura">Letteratura</button>
+            <button class="category-button" data-category="societa">Società</button>
+        </div>
+        
+        <div class="category-section" data-category="nuovi">
+            <h2 class="category-header highlight">Articoli Recenti</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="nuovi arte">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Mostra d'Arte Contemporanea</h3>
+                        <p>Un viaggio tra le nuove espressioni artistiche del panorama italiano...</p>
+                        <a href="articolo1.html">Leggi di più</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi filosofia">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Filosofia e Tecnologia</h3>
+                        <p>Una riflessione sul rapporto tra pensiero filosofico e innovazione tecnologica...</p>
+                        <a href="articolo2.html">Scopri</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Società Contemporanea</h3>
+                        <p>Una riflessione profonda sui temi sociali che coinvolgono la cultura italiana...</p>
+                        <a href="articolo3.html">Approfondisci</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="nuovi letteratura">
+                  <div class="article-image">
+                      <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                      <span class="new-badge">Nuovo</span>
+                  </div>
+                  <div class="article-content">
+                      <h3>Letteratura di genere</h3>
+                      <p>Una riflessione profonda sulla composizione di romanzi e...</p>
+                      <a href="articolo4.html">Approfondisci</a>
+                  </div>
+              </article>
+            </div>
+        </div>
+        
+        <div class="category-section" data-category="arte">
+            <h2 class="category-header">Arte</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="arte">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Le nuove tendenze artistiche</h3>
+                        <p>Un'analisi delle correnti artistiche emergenti nel panorama internazionale...</p>
+                        <a href="articolo4.html">Leggi di più</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="arte">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Musei virtuali</h3>
+                        <p>Come la tecnologia sta trasformando l'esperienza museale nel XXI secolo...</p>
+                        <a href="articolo5.html">Scopri</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="category-section" data-category="filosofia">
+            <h2 class="category-header">Filosofia</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="filosofia">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Esistenzialismo oggi</h3>
+                        <p>Un ritorno ai principi dell'esistenzialismo nell'epoca della digitalizzazione...</p>
+                        <a href="articolo6.html">Approfondisci</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="filosofia">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Etica e Intelligenza Artificiale</h3>
+                        <p>Riflessioni sui dilemmi etici posti dall'avanzamento tecnologico contemporaneo...</p>
+                        <a href="articolo7.html">Leggi di più</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="category-section" data-category="letteratura">
+            <h2 class="category-header">Letteratura</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="letteratura">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Autori emergenti</h3>
+                        <p>Le voci più promettenti nel panorama letterario contemporaneo italiano...</p>
+                        <a href="articolo8.html">Scopri</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="letteratura">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Classici rivisitati</h3>
+                        <p>Una nuova lettura dei grandi classici della letteratura mondiale...</p>
+                        <a href="articolo9.html">Approfondisci</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
+        <div class="category-section" data-category="societa">
+            <h2 class="category-header">Società</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Sostenibilità urbana</h3>
+                        <p>Come le città italiane stanno affrontando le sfide ambientali contemporanee...</p>
+                        <a href="articolo10.html">Leggi di più</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Identità digitale</h3>
+                        <p>Trasformazioni sociali nell'era della connettività permanente...</p>
+                        <a href="articolo11.html">Scopri</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="segnalazioni">
+  <div class="container">
+      <h3>Inviaci le tue segnalazioni</h3>
+      <p>Hai suggerimenti, idee o vuoi segnalare qualcosa di interessante? Scrivici e saremo felici di accogliere i tuoi contributi.</p>
+      <form>
+          <div class="form-group-vertical">
+              <input type="text" placeholder="Il tuo nome" required>
+              <input type="email" placeholder="La tua email" required>
+              <select>
+                  <option value="" disabled selected>Tipo di segnalazione</option>
+                  <option value="suggerimento">Suggerimento articolo</option>
+                  <option value="correzione">Correzione</option>
+                  <option value="collaborazione">Proposta di collaborazione</option>
+                  <option value="altro">Altro</option>
+              </select>
+              <textarea placeholder="Descrivi la tua segnalazione..." rows="4" required></textarea>
+              <button type="submit" class="btn-submit">Invia segnalazione</button>
+          </div>
+      </form>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Rivista Elegante</h4>
+                <p>La tua fonte di ispirazione per stile, cultura e riflessioni contemporanee.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Seguici</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Pinterest">PT</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Rivista Elegante. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.category-button');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                this.classList.add('active');
+
+                const selectedCategory = this.getAttribute('data-category');
+  
+                filterArticles(selectedCategory);
+            });
+        });
+        
+        function filterArticles(category) {
+            const categorySections = document.querySelectorAll('.category-section');
+            
+            if(category === 'tutti') {
+                categorySections.forEach(section => {
+                    section.classList.remove('hidden');
+                });
+            } else {
+                categorySections.forEach(section => {
+                    if(section.getAttribute('data-category') === category) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+            }
+
+            setTimeout(() => {
+                const visibleArticles = document.querySelectorAll('.category-section:not(.hidden) .article-item');
+                visibleArticles.forEach(article => {
+                    article.classList.add('fade-in');
+                    
+                    setTimeout(() => {
+                        article.classList.remove('fade-in');
+                    }, 600);
+                });
+            }, 50);
+        }
+    });
+</script>
+</body>
+</html>
