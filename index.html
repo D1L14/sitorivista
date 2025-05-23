@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Rivista Elegante</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <h1><a href="index.html" class="logo">Rivista Elegante</a></h1>
-            <nav>
+    <header id="main-header">
+        <div class="container">
+            <h1><a href="index.html" style="color: var(--secondary-color); text-decoration: none;">UNI DOC</a></h1>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="articoli.html">Articoli</a></li>
@@ -18,13 +18,14 @@
                     <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu-toggle">☰</div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container hero-content">
-            <h2>Benvenuti nella nostra rivista</h2>
-            <p>Stile, cultura e riflessioni contemporanee.</p>
+            <!--<h2>Benvenuti nella nostra rivista</h2>
+            <p>Stile, cultura e riflessioni contemporanee.</p>-->
         </div>
     </section>
 
@@ -45,23 +46,23 @@
                 </article>
                 <article class="article-item" data-categories="nuovi filosofia">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="allen.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
                         <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Filosofia e Tecnologia</h3>
-                        <p>Una riflessione sul rapporto tra pensiero filosofico e innovazione tecnologica...</p>
+                        <h3>La Manhattan di Woody Allen</h3>
+                        <p>C'è stato un tempo, in cui New York era meno instabile e minacciosa, in cui la sua disperazione sociale e la sua agonia sembravano più gestibili ed evitabili.</p>
                         <a href="articolo2.html">Scopri</a>
                     </div>
                 </article>
                 <article class="article-item" data-categories="nuovi societa">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="crisipresidenza.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
                         <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Società Contemporanea</h3>
-                        <p>Una riflessione profonda sui temi sociali che coinvolgono la cultura italiana...</p>
+                        <h3>La crisi di fiducia nella presidenza americana</h3>
+                        <p>Nella seconda metà del Novecento, qualcosa cambia radicalmente nel rapporto tra il popolo americano e la presidenza. La fiducia cede il passo al cinismo e il rispetto per la figura del presidente si sgretola sotto il peso di scandali, guerre, crisi economiche e promesse non mantenute.</p>
                         <a href="articolo3.html">Approfondisci</a>
                     </div>
                 </article>
@@ -136,6 +137,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('#main-nav');
+            
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
-

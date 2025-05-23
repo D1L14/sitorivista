@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <h1><a href="index.html" class="logo">Rivista Elegante</a></h1>
-            <nav>
+    <header id="main-header">
+        <div class="container">
+            <h1><a href="index.html" style="color: var(--secondary-color); text-decoration: none;">UNI DOC</a></h1>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="articoli.html">Articoli</a></li>
@@ -18,23 +18,25 @@
                     <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu-toggle">☰</div>
         </div>
     </header>
 
-<section class="hero" style="background-image: url(cobain.jpg);">
-  <div class="container">
-    <h2>Articolo: Gli orfani della generazione X</h2>
-    <p>“Nella sua terribile depressione e nella sua rabbia senza oggetto, (Cobain) sembra aver dato voce allo sconforto della generazione che era arrivata alla fine della storia, ogni cui mossa veniva anticipata, tracciata, comprata e venduta ancora prima che accadesse.”</p>
-  </div>
-</section>
+    <section class="hero-article" style="background-image: url(cobain.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Articolo: Gli orfani della generazione X</h2>
+            <p>“Nella sua terribile depressione e nella sua rabbia senza oggetto, (Cobain) sembra aver dato voce allo sconforto della generazione che era arrivata alla fine della storia, ogni cui mossa veniva anticipata, tracciata, comprata e venduta ancora prima che accadesse.”</p>
+        </div>
+    </section>
 
-<section class="single-article-full">
+    <section class="single-article-full">
     <div class="single-article-container">
         <div class="single-article-header">
             <h1>Gli orfani della generazione X</h1>
             <div class="single-article-meta">
                 <span class="author">Di Marco Bianchi</span> • 
-                <span class="date">15 Maggio 2026</span> • 
+                <span class="date">01 Gennaio 2026</span> • 
                 <span class="category">Filosofia Contemporanea</span>
             </div>
         </div>
@@ -138,6 +140,15 @@
         </div>
     </div>
 </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('#main-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+    </script>
 </body>
 </html>
-

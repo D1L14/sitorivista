@@ -7,24 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container header-content">
-        <h1><a href="index.html" class="logo">Rivista Elegante</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="articoli.html">Articoli</a></li>
-                <li><a href="chisiamo.html">Chi siamo</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+  <header id="main-header">
+        <div class="container">
+            <h1><a href="index.html" style="color: var(--secondary-color); text-decoration: none;">UNI DOC</a></h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="chisiamo.html">Chi siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
 
 <section class="hero">
     <div class="container hero-content">
-        <h2>I nostri Articoli</h2>
-        <p>Una selezione curata di contenuti culturali e di approfondimento.</p>
+        <!--<h2>I nostri Articoli</h2>
+        <p>Una selezione curata di contenuti culturali e di approfondimento.</p>-->
     </div>
 </section>
 
@@ -33,10 +34,11 @@
         <div class="category-filters">
             <button class="category-button active" data-category="tutti">Tutti</button>
             <button class="category-button" data-category="nuovi">Nuovi</button>
-            <button class="category-button" data-category="arte">Arte</button>
-            <button class="category-button" data-category="filosofia">Filosofia</button>
-            <button class="category-button" data-category="letteratura">Letteratura</button>
-            <button class="category-button" data-category="societa">Società</button>
+            <button class="category-button" data-category="arte">Notizie e Politica</button>
+            <button class="category-button" data-category="filosofia">Cultura</button>
+            <button class="category-button" data-category="letteratura">Narrativa</button>
+            <button class="category-button" data-category="societa">Scienza e tecnologia</button>
+            <button class="category-button" data-category="societa">Saggi e Opinioni</button>
         </div>
         
         <div class="category-section" data-category="nuovi">
@@ -53,53 +55,44 @@
                         <a href="articolo1.html">Leggi di più</a>
                     </div>
                 </article>
-                <article class="article-item" data-categories="nuovi filosofia">
-                    <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
-                        <span class="new-badge">Nuovo</span>
-                    </div>
-                    <div class="article-content">
-                        <h3>Filosofia e Tecnologia</h3>
-                        <p>Una riflessione sul rapporto tra pensiero filosofico e innovazione tecnologica...</p>
-                        <a href="articolo2.html">Scopri</a>
-                    </div>
-                </article>
                 <article class="article-item" data-categories="nuovi societa">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="crisipresidenza.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
                         <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Società Contemporanea</h3>
-                        <p>Una riflessione profonda sui temi sociali che coinvolgono la cultura italiana...</p>
+                        <h3>La crisi di fiducia nella presidenza americana</h3>
+                        <p>Nella seconda metà del Novecento, qualcosa cambia radicalmente nel rapporto tra il popolo americano e la presidenza. La fiducia cede il passo al cinismo e il rispetto per la figura del presidente si sgretola sotto il peso di scandali, guerre, crisi economiche e promesse non mantenute.</p>
                         <a href="articolo3.html">Approfondisci</a>
                     </div>
                 </article>
-                <article class="article-item" data-categories="nuovi letteratura">
-                  <div class="article-image">
-                      <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
-                      <span class="new-badge">Nuovo</span>
-                  </div>
-                  <div class="article-content">
-                      <h3>Letteratura di genere</h3>
-                      <p>Una riflessione profonda sulla composizione di romanzi e...</p>
-                      <a href="articolo4.html">Approfondisci</a>
-                  </div>
-              </article>
+                <article class="article-item" data-categories="nuovi filosofia">
+                    <div class="article-image">
+                        <img src="allen.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>La Manhattan di Woody Allen</h3>
+                        <p>C'è stato un tempo, in cui New York era meno instabile e minacciosa, in cui la sua disperazione sociale e la sua agonia sembravano più gestibili ed evitabili.</p>
+                        <a href="articolo2.html">Scopri</a>
+                    </div>
+                </article>
+                
             </div>
         </div>
         
         <div class="category-section" data-category="arte">
-            <h2 class="category-header">Arte</h2>
+            <h2 class="category-header">Notizie e Politica</h2>
             <div class="articles-grid">
-                <article class="article-item" data-categories="arte">
+                <article class="article-item" data-categories="nuovi societa">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="crisipresidenza.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Le nuove tendenze artistiche</h3>
-                        <p>Un'analisi delle correnti artistiche emergenti nel panorama internazionale...</p>
-                        <a href="articolo4.html">Leggi di più</a>
+                        <h3>La crisi di fiducia nella presidenza americana</h3>
+                        <p>Nella seconda metà del Novecento, qualcosa cambia radicalmente nel rapporto tra il popolo americano e la presidenza. La fiducia cede il passo al cinismo e il rispetto per la figura del presidente si sgretola sotto il peso di scandali, guerre, crisi economiche e promesse non mantenute.</p>
+                        <a href="articolo3.html">Approfondisci</a>
                     </div>
                 </article>
                 <article class="article-item" data-categories="arte">
@@ -116,33 +109,35 @@
         </div>
         
         <div class="category-section" data-category="filosofia">
-            <h2 class="category-header">Filosofia</h2>
+            <h2 class="category-header">Cultura</h2>
             <div class="articles-grid">
-                <article class="article-item" data-categories="filosofia">
+                <article class="article-item" data-categories="nuovi filosofia">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="allen.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Esistenzialismo oggi</h3>
-                        <p>Un ritorno ai principi dell'esistenzialismo nell'epoca della digitalizzazione...</p>
-                        <a href="articolo6.html">Approfondisci</a>
+                        <h3>La Manhattan di Woody Allen</h3>
+                        <p>C'è stato un tempo, in cui New York era meno instabile e minacciosa, in cui la sua disperazione sociale e la sua agonia sembravano più gestibili ed evitabili.</p>
+                        <a href="articolo2.html">Scopri</a>
                     </div>
                 </article>
-                <article class="article-item" data-categories="filosofia">
+                <article class="article-item" data-categories="nuovi arte">
                     <div class="article-image">
-                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <img src="cobain.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                        <span class="new-badge">Nuovo</span>
                     </div>
                     <div class="article-content">
-                        <h3>Etica e Intelligenza Artificiale</h3>
-                        <p>Riflessioni sui dilemmi etici posti dall'avanzamento tecnologico contemporaneo...</p>
-                        <a href="articolo7.html">Leggi di più</a>
+                        <h3>Gli orfani della generazione X</h3>
+                        <p>“Nella sua terribile depressione e nella sua rabbia senza oggetto, (Cobain) sembra aver dato voce allo sconforto della generazione che era arrivata alla fine della storia, ogni cui mossa veniva anticipata, tracciata, comprata e venduta ancora prima che accadesse.”</p>
+                        <a href="articolo1.html">Leggi di più</a>
                     </div>
                 </article>
             </div>
         </div>
         
         <div class="category-section" data-category="letteratura">
-            <h2 class="category-header">Letteratura</h2>
+            <h2 class="category-header">Narrativa</h2>
             <div class="articles-grid">
                 <article class="article-item" data-categories="letteratura">
                     <div class="article-image">
@@ -168,7 +163,33 @@
         </div>
         
         <div class="category-section" data-category="societa">
-            <h2 class="category-header">Società</h2>
+            <h2 class="category-header">Scienza e Tecnologia</h2>
+            <div class="articles-grid">
+                <article class="article-item" data-categories="societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Sostenibilità urbana</h3>
+                        <p>Come le città italiane stanno affrontando le sfide ambientali contemporanee...</p>
+                        <a href="articolo10.html">Leggi di più</a>
+                    </div>
+                </article>
+                <article class="article-item" data-categories="societa">
+                    <div class="article-image">
+                        <img src="imgexample1.jpg" alt="Immagine articolo" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="article-content">
+                        <h3>Identità digitale</h3>
+                        <p>Trasformazioni sociali nell'era della connettività permanente...</p>
+                        <a href="articolo11.html">Scopri</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="category-section" data-category="societa">
+            <h2 class="category-header">Saggi e Opinioni</h2>
             <div class="articles-grid">
                 <article class="article-item" data-categories="societa">
                     <div class="article-image">
@@ -249,7 +270,18 @@
     </div>
 </footer>
 
-<script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('#main-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+    </script>
+
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
         const filterButtons = document.querySelectorAll('.category-button');
 
