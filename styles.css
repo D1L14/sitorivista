@@ -114,6 +114,9 @@ body {
   }
   #main-header {
     height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #main-nav {
     position: absolute;
